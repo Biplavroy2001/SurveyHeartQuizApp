@@ -10,6 +10,8 @@ High Scores: Keeps track of your best score using SharedPreferences and displays
 State Persistence: Ensures that the quiz and timer state are preserved during orientation changes or if the app goes into the background.
 Smooth Navigation: Offers seamless navigation between the Home Screen, Quiz Screen, and Result Screen, providing a fluid user experience.
 Responsive Design: Handles orientation changes effectively without disrupting the quiz progress or causing data loss.
+
+
 💡 Tech Stack
 Programming Language: Kotlin
 Database: Room Database (with SQLite backend)
@@ -25,7 +27,7 @@ Clone this repository:
 
 bash
 Copy code
-git clone https://github.com/Biplavroy2001/QuizApp.git
+git clone [https://github.com/Biplavroy2001/QuizApp.git](https://github.com/Biplavroy2001/SurveyHeartQuizApp)
 Open the project in Android Studio.
 
 Build the project and run the app on your device or emulator.
