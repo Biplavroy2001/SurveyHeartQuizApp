@@ -1,23 +1,46 @@
-# Trivia App
-This is a trivia app built using Kotlin and XML. It uses the Open Trivia Database api.
+Quiz App
+Welcome to the Quiz App, a feature-rich Android application built to test your general knowledge while showcasing modern Android development skills. This app was developed as part of a selection process for a software company, following the provided specifications. It includes seamless API integration, local data storage, and a smooth user experience.
+
+📱 Features
+Fetch Questions from API: Retrieves multiple-choice questions from the Open Trivia Database (OTDB) API to provide fresh and challenging quiz questions.
+Store Questions Locally: Uses the Room database to save questions locally, ensuring the app functions offline without needing an active internet connection.
+Score Calculation: Automatically calculates your score based on the number of correct answers submitted during the quiz.
+Quiz Timer: Implements a timer that limits the time to complete the quiz, making it more engaging and competitive.
+High Scores: Keeps track of your best score using SharedPreferences and displays it for future reference.
+State Persistence: Ensures that the quiz and timer state are preserved during orientation changes or if the app goes into the background.
+Smooth Navigation: Offers seamless navigation between the Home Screen, Quiz Screen, and Result Screen, providing a fluid user experience.
+Responsive Design: Handles orientation changes effectively without disrupting the quiz progress or causing data loss.
+💡 Tech Stack
+Programming Language: Kotlin
+Database: Room Database (with SQLite backend)
+API: Open Trivia Database (OTDB) API
+UI Components: Fragments, Activities, ViewModels
+State Management: LiveData, ViewModel, SavedStateHandle
+Local Storage: Room Database, SharedPreferences
+Navigation: Jetpack Navigation Component
+Timer Handling: CountDownTimer
+Architecture: MVVM (Model-View-ViewModel)
+🛠 How to Build
+Clone this repository:
+
+bash
+Copy code
+git clone https://github.com/Biplavroy2001/QuizApp.git
+Open the project in Android Studio.
+
+Build the project and run the app on your device or emulator.
+
+Ensure you have internet access initially to fetch the quiz questions from the API.
+
 
 # Technologies Used
-Retrofit | RxJava3 | Kotlin | ViewBinding
+Retrofit | RxJava3 | Kotlin | ViewBinding 
 
-# Screenshots
-|Screenshot 1|Screenshot 2|Screenshot 3|
-|:-------:|:-------:|:-------:|
-| [![1.jpg](https://i.postimg.cc/8PbbnTSw/1.jpg)](https://postimg.cc/MvvRn2Xj) | [![2.jpg](https://i.postimg.cc/kXMSG80F/2.jpg)](https://postimg.cc/jC92kWdL) | [![3.jpg](https://i.postimg.cc/bvnDWRn8/3.jpg)](https://postimg.cc/TyR3WgQH) |
-|Screenshot 4|Screenshot 5|Screenshot 6|
-| [![4.jpg](https://i.postimg.cc/Wp539yyg/4.jpg)](https://postimg.cc/JtBM0pMz) | [![5.jpg](https://i.postimg.cc/FFCrbLfx/5.jpg)](https://postimg.cc/yW9CsWyJ) | [![6.jpg](https://i.postimg.cc/DzcFSJkL/6.jpg)](https://postimg.cc/8Fsx3CCz) |
-|Screenshot 7|Screenshot 8|Screenshot 9|
-| [![7.jpg](https://i.postimg.cc/nzCHNFgm/7.jpg)](https://postimg.cc/YGBKWHp2) | [![8.jpg](https://i.postimg.cc/VLyYHcRS/8.jpg)](https://postimg.cc/G9QwHV6r) | [![9.jpg](https://i.postimg.cc/Bnp46PGD/9.jpg)](https://postimg.cc/755pt6hY) |
 
 # API
 This project uses the Open Trivia Database API. <a href="https://opentdb.com/">Click here for reference.</a>
 
 # Author
-<b>Rajit Deb</b>
+<b>Biplav Roy</b>
 
-# Find me on
-[![LinkedIn Profile](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/imrajit/)
+find me on linkedin: https://www.linkedin.com/in/biplavroy
