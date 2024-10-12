@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.roy.surveyheartquiz.ui.fragment.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_selectCategoryFragment"
+            app:destination="@id/selectCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectCategoryFragment"
+        android:name="com.roy.surveyheartquiz.ui.fragment.SelectCategoryFragment"
+        android:label="fragment_select_category"
+        tools:layout="@layout/fragment_select_category">
+        <action
+            android:id="@+id/action_selectCategoryFragment_to_selectGameDifficultyFragment"
+            app:destination="@id/selectGameDifficultyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectGameDifficultyFragment"
+        android:name="com.roy.surveyheartquiz.ui.fragment.SelectGameDifficultyFragment"
+        android:label="fragment_select_game_difficulty"
+        tools:layout="@layout/fragment_select_game_difficulty">
+        <argument
+            android:name="selectedCategory"
+            app:argType="com.roy.surveyheartquiz.data.network.model.TriviaCategory" />
+        <action
+            android:id="@+id/action_selectGameDifficultyFragment_to_quizFragment"
+            app:destination="@id/quizFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.roy.surveyheartquiz.ui.fragment.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_quizFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.roy.surveyheartquiz.ui.fragment.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

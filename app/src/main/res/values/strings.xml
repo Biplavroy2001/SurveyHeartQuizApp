@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SurveyHeart Quiz App</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="welcome_txt">Welcome to\nSurveyHeart Quiz!</string>
+    <string name="lets_play_btn">Let\'s Play</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_difficulty_level">Select Difficulty Level</string>
+    <string name="game_difficulty_easy">Easy</string>
+    <string name="game_difficulty_medium">Medium</string>
+    <string name="game_difficulty_hard">Hard</string>
+    <string name="quiz_fragment">Quiz Fragment</string>
+    <string name="next">Next</string>
+    <string name="move_to_next_question">Move to Next Question</string>
+    <string name="return_to_home">Return to Home</string>
+</resources>
